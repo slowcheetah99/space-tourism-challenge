@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home__body {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.logo {
+  width: 50%;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+  margin-left: 5%;
+}
+.navigation__bar {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2% 0% 2% 6%;
+  position: relative;
+}
+
+.navigation__bar::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(20px);
+}
+
+.navigation__bar::after {
+  content: "";
+  top: 50%;
+  left: -55%;
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: inherit;
+}
+
+.navigation__bar ul {
+  width: 100%;
+  display: flex;
+  column-gap: 50px;
+  position: relative;
+  z-index: 4;
+}
+
+.navigation__bar ul li {
+  list-style: none;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.navigation__bar ul li a {
+  position: relative;
+  text-decoration: none;
+  color: ghostwhite;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: ghostwhite;
+}
+
+.main__content {
+  display: flex;
+  color: ghostwhite;
+  margin-top: 6%;
+}
+
+.main__content--text {
+  width: 70%;
+  padding-inline: 18%;
+}
+
+.main__content--text h3 {
+  font-size: 1.5rem;
+  font-family: "Cinzel Decorative", Tahoma;
+  font-weight: 400;
+}
+
+.main__content--text h3 span {
+  font-size: 7rem;
+}
+
+.main__content--text p {
+  line-height: 1.75rem;
+  font-family: "Josefin Sans";
+}
+
+.main__content--cta {
+  width: 30%;
+  position: relative;
+}
+
+.main__content--cta div {
+  position: absolute;
+  bottom: 0%;
+  right: 15%;
+  height: 15vw;
+  width: 15vw;
+  background-color: ghostwhite;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 1 5rem;
+  text-transform: uppercase;
+}
+
+.destination__body {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  color: ghostwhite;
+}
+
+main {
+  margin-top: 5%;
+  display: flex;
+}
+
+.destination--content {
+  width: 50%;
+  height: fit-content;
+}
+
+.destination--nav {
+  width: 50%;
+}
+.destination__text h3 {
+  font-size: 1.25rem;
+  color: ghostwhite;
+  font-family: "Cinzel Decorative", sans-serif;
+  text-align: center;
+}
+
+.destination__text h3 span {
+  margin-right: 1rem;
+}
+
+.destination--image img {
+  width: 20rem;
+  height: 20rem;
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+.destination--nav--elements {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: 0 auto 10%;
+  overflow: hidden;
+}
+
+.destination--nav--elements li {
+  list-style: none;
+  font-size: 1.1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.destination--nav--elements li a {
+  text-decoration: none;
+  color: ghostwhite;
+}
+
+.destination--nav {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 30%; 
+}
+
+.positioned{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    display: none;
+    width: 70%;
+    margin-left: 12%;
+}
+
+.positioned p{
+    font-size: 1rem;
+    color: gainsboro;
+    margin-bottom: 10%;
+    width: 92%;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.d-flex::before{
+    position: absolute;
+    content: "";
+    top: -10%;
+    left: 0%;
+    width: 90%;
+    height: 1px;
+    background-color: gainsboro;
+}
+
+
+.d-flex p{
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 3%;
+}
+.d-flex p span{
+    font-size: 1rem;
+}
